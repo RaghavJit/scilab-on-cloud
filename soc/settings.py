@@ -77,34 +77,12 @@ WSGI_APPLICATION = 'soc.wsgi.application'
 
 DATABASES = {
     'default': {
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.mysql',
-        # Or path to database file if using sqlite3.
-	'OPTIONS': {
-            'sql_mode': 'traditional',
-        },
-        'NAME': DB_NAME_DEFAULT,
-        'USER': DB_USER_DEFAULT,
-        'PASSWORD': DB_PASS_DEFAULT,
-        # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'HOST': DB_HOST_DEFAULT,
-        # Set to empty string for default.
-        'PORT': DB_PORT_DEFAULT,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': "aci-cloud--01-2025.db.sqlite3",
     },
     'scilab': {
-        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'ENGINE': 'django.db.backends.mysql',
-	'OPTIONS': {
-            'sql_mode': 'traditional',
-        },
-        # Or path to database file if using sqlite3.
-        'NAME': DB_NAME_SCILAB,
-        'USER': DB_USER_SCILAB,
-        'PASSWORD': DB_PASS_SCILAB,
-        # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
-        'HOST': DB_HOST_SCILAB,
-        # Set to empty string for default.
-        'PORT': DB_PORT_SCILAB,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': "aci-cloud--01-2025.db.sqlite3",
     }
 }
 
